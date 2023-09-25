@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="search_style">
+        <item name="android:textSize">18sp</item>
+        <item name="editTextColor">@color/black</item>
+    </style>
+    
+    <style name="nav_text_active">
+        <item name="textFillColor">#FFF</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="nav_text_inactive">
+        <item name="textFillColor">#00FFFFFF</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+</resources>

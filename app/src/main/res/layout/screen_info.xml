@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15"
+        android:id="@+id/guideline"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/guideline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@color/primary_color"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_top"
+        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bluecurve_light"
+            android:text="Info"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            tools:ignore="MissingConstraints" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btn_menu"
+            android:layout_width="24sp"
+            android:layout_height="18sp"
+            android:elevation="8dp"
+            android:src="@drawable/menu"
+            android:tint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/txt_style"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txt_style" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/guideline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/bg_bottom"
+        android:paddingBottom="4dp"
+        android:paddingHorizontal="12dp">
+
+
+
+        <!--<ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:letterSpacing="0.03"
+                android:lineSpacingExtra="8dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/bluecurve_light"
+                android:text="Today's increasingly interconnected world, language barriers are being broken down through technological advancements. One such advancement is the creation of language dictionary apps, which provide users with easy access to a vast array of words, meanings, and translations. This essay will delve into the development and significance of a comprehensive English-Uzbek dictionary app, exploring its features, benefits, challenges, and potential impacts.
+
+Features of the English-Uzbek Dictionary App:
+A successful English-Uzbek dictionary app should encompass a variety of features to ensure user satisfaction and enhanced language learning. These features could include:
+\n1. Vast Word Database: The app should contain a substantial database of approximately 15,000 words, covering a wide range of vocabulary from common to specialized terms.
+\n2. Offline Accessibility: The app should offer offline access to its dictionary to cater to users without consistent internet connectivity.
+\n3. Search Functionality: A robust search feature with options for phonetic search, wildcard search, and voice search would enhance user experience.
+\n4. Audio Pronunciation: Audio clips for correct pronunciation of words are invaluable for language learners.
+\n5. Regular Updates: An essential feature for keeping the dictionary current and accurate, considering language's evolving nature.
+
+Benefits of the App:
+\n1. Language Learning: The app facilitates language learning for both English speakers looking to learn Uzbek and Uzbek speakers improving their English skills.
+\n2. Accessibility: Users can conveniently access the dictionary anytime and anywhere, aiding quick language reference.
+\n3. Cultural Exchange: The app promotes cultural understanding by enabling users to explore linguistic nuances and idiomatic expressions.
+\n4. Academic and Professional Use: Students, researchers, and professionals can benefit from accurate word meanings and contextual examples.
+\n5. Time Efficiency: The app saves users time by providing instant word definitions and translations.
+
+Challenges in Developing the App:
+\n1. Language Nuances: Translating idiomatic expressions and culturally specific terms accurately can be complex.
+\n2. App Design and Usability: Designing an intuitive and user-friendly interface requires careful consideration.
+\n3. Pronunciation Accuracy: Ensuring accurate audio pronunciations for both languages can be challenging.
+\n4. Technical Compatibility: The app should be compatible with various mobile platforms and devices.
+
+Potential Impacts:
+\n1. Linguistic Preservation: The app contributes to preserving the Uzbek language by making it accessible to a global audience.
+\n2. Cross-Cultural Communication: Enhanced language understanding promotes meaningful communication between English and Uzbek speakers.
+\n3. Educational Enhancement: Language learners benefit from an interactive and convenient tool to expand their vocabulary and language skills.
+\n4. Global Connectivity: The app fosters connections between individuals from different linguistic backgrounds, breaking down language barriers.
+\n\nCreator jumayevjavohir585@gmail.com"/>
+        </ScrollView>
+
+
+
+-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="12dp"
+                android:orientation="vertical"
+                >
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/logo"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:cardCornerRadius="100dp"
+                    android:layout_gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.1">
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/logo_gita" />
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_marginTop="12dp"
+                    app:cardBackgroundColor="#52505050"
+                    app:cardCornerRadius="12dp"
+                    app:layout_constraintTop_toBottomOf="@id/logo">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_marginHorizontal="6dp"
+                        android:textSize="22sp"
+                        android:text="This program was developed by Jumayev Javahir, a student of the GITA educational center, to gain practical skills. Today's increasingly interconnected world, language barriers are being broken down through technological advancements. One such advancement is the creation of language dictionary apps, which provide users with easy access to a vast array of words, meanings, and translations. This essay will delve into the development and significance of a comprehensive English-Uzbek dictionary app, exploring its features, benefits, challenges, and potential impacts.
+
+Features of the English-Uzbek Dictionary App:
+A successful English-Uzbek dictionary app should encompass a variety of features to ensure user satisfaction and enhanced language learning. These features could include:
+\n1. Vast Word Database: The app should contain a substantial database of approximately 15,000 words, covering a wide range of vocabulary from common to specialized terms.
+\n2. Offline Accessibility: The app should offer offline access to its dictionary to cater to users without consistent internet connectivity.
+\n3. Search Functionality: A robust search feature with options for phonetic search, wildcard search, and voice search would enhance user experience.
+\n4. Audio Pronunciation: Audio clips for correct pronunciation of words are invaluable for language learners.
+\n5. Regular Updates: An essential feature for keeping the dictionary current and accurate, considering language's evolving nature.
+
+Benefits of the App:
+\n1. Language Learning: The app facilitates language learning for both English speakers looking to learn Uzbek and Uzbek speakers improving their English skills.
+\n2. Accessibility: Users can conveniently access the dictionary anytime and anywhere, aiding quick language reference.
+\n3. Cultural Exchange: The app promotes cultural understanding by enabling users to explore linguistic nuances and idiomatic expressions.
+\n4. Academic and Professional Use: Students, researchers, and professionals can benefit from accurate word meanings and contextual examples.
+\n5. Time Efficiency: The app saves users time by providing instant word definitions and translations.
+
+Challenges in Developing the App:
+\n1. Language Nuances: Translating idiomatic expressions and culturally specific terms accurately can be complex.
+\n2. App Design and Usability: Designing an intuitive and user-friendly interface requires careful consideration.
+\n3. Pronunciation Accuracy: Ensuring accurate audio pronunciations for both languages can be challenging.
+\n4. Technical Compatibility: The app should be compatible with various mobile platforms and devices.
+
+Potential Impacts:
+\n1. Linguistic Preservation: The app contributes to preserving the Uzbek language by making it accessible to a global audience.
+\n2. Cross-Cultural Communication: Enhanced language understanding promotes meaningful communication between English and Uzbek speakers.
+\n3. Educational Enhancement: Language learners benefit from an interactive and convenient tool to expand their vocabulary and language skills.
+\n4. Global Connectivity: The app fosters connections between individuals from different linguistic backgrounds, breaking down language barriers."
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
