@@ -1,11 +1,11 @@
-package uz.gita.lesson21.data.local.database
+package uz.gita.mDictionary.data.local.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import uz.gita.lesson21.data.local.daos.WordDao
-import uz.gita.lesson21.data.local.model.WordEntity
+import uz.gita.mDictionary.data.local.daos.WordDao
+import uz.gita.mDictionary.data.local.model.WordEntity
 
 
 @Database(entities = [WordEntity::class], version = 1, exportSchema = false)

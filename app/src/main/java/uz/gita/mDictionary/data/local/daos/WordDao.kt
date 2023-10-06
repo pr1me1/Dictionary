@@ -1,4 +1,4 @@
-package uz.gita.lesson21.data.local.daos
+package uz.gita.mDictionary.data.local.daos
 
 import android.database.Cursor
 import androidx.room.Dao

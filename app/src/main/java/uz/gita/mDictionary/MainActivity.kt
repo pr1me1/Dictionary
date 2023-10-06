@@ -1,11 +1,12 @@
-package uz.gita.lesson21
+package uz.gita.mDictionary
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import uz.gita.lesson21.R
 import uz.gita.lesson21.databinding.ActivityMainBinding
-import uz.gita.lesson21.fragments.InfoScreen
-import uz.gita.lesson21.fragments.MainScreen
-import uz.gita.lesson21.fragments.SavedScreen
+import uz.gita.mDictionary.fragments.InfoScreen
+import uz.gita.mDictionary.fragments.MainScreen
+import uz.gita.mDictionary.fragments.SavedScreen
 
 class MainActivity : AppCompatActivity() {
     private lateinit var bindidng: ActivityMainBinding

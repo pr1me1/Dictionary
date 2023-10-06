@@ -1,8 +1,8 @@
-package uz.gita.lesson21.app
+package uz.gita.mDictionary.app
 
 import android.app.Application
-import uz.gita.lesson21.data.local.database.WordDatabase
-import uz.gita.lesson21.data.local.shared.Shared
+import uz.gita.mDictionary.data.local.database.WordDatabase
+import uz.gita.mDictionary.data.local.shared.Shared
 
 class App : Application() {
     override fun onCreate() {

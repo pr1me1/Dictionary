@@ -1,4 +1,4 @@
-package uz.gita.lesson21.utils
+package uz.gita.mDictionary.utils
 
 import android.content.Context
 import android.text.Spannable

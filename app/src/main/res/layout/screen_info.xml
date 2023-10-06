@@ -171,7 +171,6 @@ Potential Impacts:
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textAlignment="center"
                         android:layout_marginHorizontal="6dp"
                         android:textSize="22sp"
                         android:text="This program was developed by Jumayev Javahir, a student of the GITA educational center, to gain practical skills. Today's increasingly interconnected world, language barriers are being broken down through technological advancements. One such advancement is the creation of language dictionary apps, which provide users with easy access to a vast array of words, meanings, and translations. This essay will delve into the development and significance of a comprehensive English-Uzbek dictionary app, exploring its features, benefits, challenges, and potential impacts.

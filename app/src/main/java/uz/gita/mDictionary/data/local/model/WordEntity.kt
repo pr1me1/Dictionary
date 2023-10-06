@@ -1,4 +1,4 @@
-package uz.gita.lesson21.data.local.model
+package uz.gita.mDictionary.data.local.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

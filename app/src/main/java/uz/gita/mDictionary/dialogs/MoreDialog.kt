@@ -1,6 +1,8 @@
-package uz.gita.lesson21.dialogs
+package uz.gita.mDictionary.dialogs
 
 import android.annotation.SuppressLint
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.util.Log
@@ -8,7 +10,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
-import uz.gita.lesson21.data.local.model.WordEntity
+import uz.gita.mDictionary.data.local.model.WordEntity
 import uz.gita.lesson21.databinding.ItemWordMoreBinding
 import java.util.Locale
 
@@ -46,6 +48,8 @@ class MoreDialog(private val word: WordEntity) : DialogFragment(), TextToSpeech.
             ViewGroup.LayoutParams.WRAP_CONTENT
         )
 
+
+        dialog!!.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
     }
 
     override fun onInit(status: Int) {

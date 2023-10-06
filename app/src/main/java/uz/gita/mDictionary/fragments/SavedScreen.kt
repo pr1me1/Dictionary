@@ -1,4 +1,4 @@
-package uz.gita.lesson21.fragments
+package uz.gita.mDictionary.fragments
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -15,10 +15,10 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.airbnb.lottie.LottieAnimationView
 import uz.gita.lesson21.R
-import uz.gita.lesson21.adapter.WordAdapter
-import uz.gita.lesson21.data.local.database.WordDatabase
+import uz.gita.mDictionary.adapter.WordAdapter
+import uz.gita.mDictionary.data.local.database.WordDatabase
 import uz.gita.lesson21.databinding.FragmentMainBinding
-import uz.gita.lesson21.dialogs.MoreDialog
+import uz.gita.mDictionary.dialogs.MoreDialog
 
 class SavedScreen : Fragment() {
     private lateinit var binding: FragmentMainBinding
@@ -34,11 +34,12 @@ class SavedScreen : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentMainBinding.inflate(inflater, container, false)
         if (container != null) {
             context = container.context
         }
+        binding.btnChanger.visibility = GONE
         return binding.root
     }
 

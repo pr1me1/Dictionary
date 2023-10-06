@@ -1,4 +1,4 @@
-package uz.gita.lesson21.adapter
+package uz.gita.mDictionary.adapter
 
 import android.annotation.SuppressLint
 import android.database.Cursor
@@ -6,9 +6,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import uz.gita.lesson21.R
-import uz.gita.lesson21.data.local.model.WordEntity
+import uz.gita.mDictionary.data.local.model.WordEntity
 import uz.gita.lesson21.databinding.ItemWordBinding
-import uz.gita.lesson21.utils.spannable
+import uz.gita.mDictionary.utils.spannable
 
 class WordAdapter(private val language: Int) : RecyclerView.Adapter<WordAdapter.Holder>() {
     private lateinit var cursor: Cursor
@@ -49,7 +49,8 @@ class WordAdapter(private val language: Int) : RecyclerView.Adapter<WordAdapter.
             binding.root.setOnClickListener {
                 cursor.let {
                     it.moveToPosition(adapterPosition)
-                    touchListener.invoke(WordEntity(
+                    touchListener.invoke(
+                        WordEntity(
                         it.getInt(0),
                         it.getString(1),
                         it.getString(2),
@@ -57,7 +58,8 @@ class WordAdapter(private val language: Int) : RecyclerView.Adapter<WordAdapter.
                         it.getString(4),
                         it.getString(5),
                         it.getInt(6)
-                    ))
+                    )
+                    )
                 }
             }
         }

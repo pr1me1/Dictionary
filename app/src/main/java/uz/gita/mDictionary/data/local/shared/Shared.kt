@@ -1,4 +1,4 @@
-package uz.gita.lesson21.data.local.shared
+package uz.gita.mDictionary.data.local.shared
 
 import android.content.Context
 import android.content.SharedPreferences

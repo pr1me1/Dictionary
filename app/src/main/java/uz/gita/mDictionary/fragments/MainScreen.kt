@@ -1,4 +1,4 @@
-package uz.gita.lesson21.fragments
+package uz.gita.mDictionary.fragments
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -14,11 +14,11 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.airbnb.lottie.LottieAnimationView
 import uz.gita.lesson21.R
-import uz.gita.lesson21.adapter.WordAdapter
-import uz.gita.lesson21.data.local.database.WordDatabase
-import uz.gita.lesson21.data.local.shared.Shared
+import uz.gita.mDictionary.adapter.WordAdapter
+import uz.gita.mDictionary.data.local.database.WordDatabase
+import uz.gita.mDictionary.data.local.shared.Shared
 import uz.gita.lesson21.databinding.FragmentMainBinding
-import uz.gita.lesson21.dialogs.MoreDialog
+import uz.gita.mDictionary.dialogs.MoreDialog
 
 class MainScreen : Fragment() {
     private lateinit var binding: FragmentMainBinding

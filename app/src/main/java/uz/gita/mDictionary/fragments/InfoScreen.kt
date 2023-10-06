@@ -1,4 +1,4 @@
-package uz.gita.lesson21.fragments
+package uz.gita.mDictionary.fragments
 
 import androidx.fragment.app.Fragment
 import uz.gita.lesson21.R
