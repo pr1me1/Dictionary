@@ -159,20 +159,13 @@ Potential Impacts:
                 </com.google.android.material.card.MaterialCardView>
 
 
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="0dp"
-                    android:layout_marginTop="12dp"
-                    app:cardBackgroundColor="#52505050"
-                    app:cardCornerRadius="12dp"
-                    app:layout_constraintTop_toBottomOf="@id/logo">
 
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="6dp"
                         android:textSize="22sp"
+                        android:justificationMode="inter_word"
                         android:text="This program was developed by Jumayev Javahir, a student of the GITA educational center, to gain practical skills. Today's increasingly interconnected world, language barriers are being broken down through technological advancements. One such advancement is the creation of language dictionary apps, which provide users with easy access to a vast array of words, meanings, and translations. This essay will delve into the development and significance of a comprehensive English-Uzbek dictionary app, exploring its features, benefits, challenges, and potential impacts.
 
 Features of the English-Uzbek Dictionary App:
@@ -201,11 +194,9 @@ Potential Impacts:
 \n2. Cross-Cultural Communication: Enhanced language understanding promotes meaningful communication between English and Uzbek speakers.
 \n3. Educational Enhancement: Language learners benefit from an interactive and convenient tool to expand their vocabulary and language skills.
 \n4. Global Connectivity: The app fosters connections between individuals from different linguistic backgrounds, breaking down language barriers."
-                        android:textColor="@color/white"
+                        android:textColor="@color/primary_color"
                         android:textStyle="bold" />
 
-
-                </com.google.android.material.card.MaterialCardView>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
         </ScrollView>

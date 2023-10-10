@@ -6,9 +6,11 @@ import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.util.Log
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
 import androidx.fragment.app.DialogFragment
 import uz.gita.mDictionary.data.local.model.WordEntity
 import uz.gita.lesson21.databinding.ItemWordMoreBinding
@@ -43,28 +45,24 @@ class MoreDialog(private val word: WordEntity) : DialogFragment(), TextToSpeech.
 
     override fun onResume() {
         super.onResume()
-        dialog!!.window!!.setLayout(
-            ViewGroup.LayoutParams.MATCH_PARENT,
-            ViewGroup.LayoutParams.WRAP_CONTENT
-        )
+        dialog!!.window!!.attributes.gravity= Gravity.CENTER
+        val layoutParams: WindowManager.LayoutParams = dialog!!.getWindow()!!.getAttributes()
 
+        layoutParams.width = 950
 
         dialog!!.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
     }
 
     override fun onInit(status: Int) {
         if (status == TextToSpeech.SUCCESS) {
-            // set US English as language for tts
             val result = tts!!.setLanguage(Locale.US)
 
             if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
-                Log.e("TTS","The Language specified is not supported!")
             } else {
                 binding.btnPlay.isEnabled = true
             }
 
         } else {
-            Log.e("TTS", "Initilization Failed!")
         }
     }
 

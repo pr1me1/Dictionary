@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/white"
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        app:cardBackgroundColor="@color/white"
-        android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="12dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_height="150dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -112,8 +108,3 @@
     </androidx.cardview.widget.CardView>
 
 
-
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
